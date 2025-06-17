@@ -1,0 +1,46 @@
+.order-form__step2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.order-form__progress-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.order-form__progress-label {
+  flex: 1;
+  color: #bfc4cf;
+}
+
+.order-form__progress-value {
+  min-width: 40px;
+  text-align: right;
+  color: #4ea6e9;
+  font-weight: bold;
+}
+
+.order-form__file-wrapper {
+  min-width: 180px;
+}
+
+.order-form__file-label {
+  display: block;
+  background: #fff;
+  color: #222;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.order-form__file-input {
+  display: none;
+}
+
+.order-form__range {
+  width: 100%;
+  margin-top: 8px;
+}

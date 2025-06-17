@@ -1,0 +1,22 @@
+@import "./../../../styles/variables";
+
+.btn{
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  padding: 12px 32px;
+  border-radius: 4px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+//.button--transparent{
+//  border: 2px solid $neutral-06;
+//  color: $neutral-07;
+//}
+//
+//.button--dark{
+//  color: $neutral-01;
+//  background-color: $neutral-07;
+//  border: 2px solid $neutral-07;
+//}

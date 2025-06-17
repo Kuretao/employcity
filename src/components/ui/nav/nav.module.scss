@@ -1,0 +1,18 @@
+@import "./../../../styles/variables";
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(20px, 5vw, 60px);
+  width: max-content;
+
+  a{
+    font-size: 13px;
+    line-height: 100%;
+    color: #fff;
+    letter-spacing: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

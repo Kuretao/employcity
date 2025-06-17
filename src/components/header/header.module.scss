@@ -1,0 +1,16 @@
+@import "./../../styles/variables";
+
+.header{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: clamp(20px, 19vw, 375px);
+  padding-right: clamp(20px, 19vw, 375px);
+  padding-top: 33px;
+  padding-bottom: 31px;
+  background-color: $neutral-04;
+  z-index: 1;
+}
