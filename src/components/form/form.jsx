@@ -58,11 +58,11 @@ const OrderFormSecondStep = () => {
 
 export const Form = () => {
     return (
-        <form>
+        <form className={styles["form"]}>
             <OrderFormFirstStep>
-                <Dropdown/>
-                <Input type={'email'} required={true}/>
-                <Input type={'text'} required={true}/>
+                <Dropdown list={[{id:1,title:"lorem"}, {id:2,title:"lorem"}]} text="lorem"/>
+                <Input type={'email'} white  required={true} placeholder={"Введите Email"}/>
+                <Input type={'text'} white  required={true} placeholder={"Введи имя"}/>
             </OrderFormFirstStep>
             <OrderFormSecondStep />
         </form>
