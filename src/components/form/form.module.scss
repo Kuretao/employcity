@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  gap: 30px;
   width: 100%;
 
   &-step-main{
@@ -23,47 +23,167 @@
 
 .order-form__step2 {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.order-form__progress-row {
-  display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 16px;
-}
-
-.order-form__progress-label {
-  flex: 1;
-  color: #bfc4cf;
-}
-
-.order-form__progress-value {
-  min-width: 40px;
-  text-align: right;
-  color: #4ea6e9;
-  font-weight: bold;
-}
-
-.order-form__file-wrapper {
-  min-width: 180px;
-}
-
-.order-form__file-label {
-  display: block;
-  background: #fff;
-  color: #222;
-  border-radius: 4px;
-  padding: 8px 12px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.order-form__file-input {
-  display: none;
-}
-
-.order-form__range {
+  gap: 30px;
   width: 100%;
-  margin-top: 8px;
+
+
+
+
+  .order-form__progress{
+    display: flex;
+    flex-direction: column;
+    flex: 0.7;
+    gap: 20px;
+
+    &-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    &-label {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0;
+      flex: 1;
+      color: #fff;
+    }
+
+    &-value {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0;
+      text-align: right;
+      min-width: 40px;
+      color: #ffffff85;
+    }
+
+    .order-form__range {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 100%;
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      outline: none;
+
+      &::-webkit-slider-runnable-track {
+        height: 6px;
+        background: #ffffff70;
+        border: 1px solid #fff;
+        border-radius: 99px;
+      }
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 23px;
+        height: 23px;
+        background: #42A9ED;
+        border-radius: 50%;
+        border: 3px solid #286690;
+        cursor: pointer;
+        margin-top: -10px;
+        box-shadow: none;
+        transition: background 0.2s;
+      }
+
+      &::-moz-range-track {
+        height: 6px;
+        background: #ffffff70;
+        border: 1px solid #fff;
+        border-radius: 3px;
+      }
+
+      &::-moz-range-progress {
+        background: transparent;
+      }
+
+      &::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        background: #4ea6e9;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        cursor: pointer;
+        box-shadow: none;
+        transition: background 0.2s;
+      }
+
+      &::-ms-track {
+        width: 100%;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+      }
+
+      &::-ms-fill-lower {
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        height: 6px;
+      }
+
+      &::-ms-fill-upper {
+        background: #ffffff70;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        height: 6px;
+      }
+
+      &::-ms-thumb {
+        width: 20px;
+        height: 20px;
+        background: #4ea6e9;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        cursor: pointer;
+        box-shadow: none;
+        transition: background 0.2s;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .order-form__file-wrapper {
+    flex: 0.34;
+    width: 100%;
+
+    .order-form__file-label {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      height: 48px;
+      color: $neutral-05;
+      border: 2px solid #3E9CDC;
+      border-radius: 3px;
+      padding: 12px;
+      cursor: pointer;
+
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 100%;
+      letter-spacing: 0;
+      vertical-align: middle;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .order-form__file-input {
+      display: none;
+    }
+  }
 }
+
+

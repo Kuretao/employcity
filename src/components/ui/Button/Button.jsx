@@ -4,15 +4,12 @@ import styles from './button.module.scss';
 export const Button = ({additionalClass, text, maxWidth}) =>{
     let btnClass;
     switch(additionalClass){
-        case "transparent":
-            btnClass = styles["button--transparent"];
+        case "accent":
+            btnClass = styles["button--accent"];
             break;
-            case "dark":
-                btnClass = styles["button--dark"];
-                break;
-                case "white":
-                    btnClass = styles["button--white"];
-                    break;
+        case "accent-small":
+            btnClass = styles["button--accent-small"];
+            break;
         default:
             btnClass = '';
     }

@@ -23,7 +23,7 @@ export const HomeWelcomeBlock = () =>{
             </div>
 
             <div className={styles["home-welcome__buttons"]}>
-                <Button text={'Заказать'}/>
+                <Button text={'Заказать'} additionalClass={'accent-small'}/>
                 <Button text={'Подробнее'}/>
             </div>
 

@@ -7,16 +7,18 @@ import {Form} from "../../form/form.jsx";
 export const OrderBlock = () =>{
     return (
         <section className={styles.order}>
-            <h2 className={styles["order__title"]}>
-                Оформление <span className={styles["order__title-accent"]}>заказа</span>
-            </h2>
-            <p className={styles["order__description"]}>
-                Перед заполнением формы ознакомьтесь с нашей схемой работы!
-            </p>
+            <div className={styles["order-header"]}>
+                <h2 className={styles["order-header__title"]}>
+                    Оформление <span className={styles["order-header__title-accent"]}>заказа</span>
+                </h2>
+                <p className={styles["order-header__description"]}>
+                    Перед заполнением формы ознакомьтесь с нашей схемой работы!
+                </p>
+            </div>
 
             <Steps/>
             <Form/>
-            <Button text={'Отправить'}/>
+            <Button text={'Отправить'} additionalClass={'accent'}/>
         </section>
 
     )

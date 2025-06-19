@@ -8,3 +8,11 @@ export const SocialLink = ({ text, icon}) =>{
         </>
     );
 }
+
+export const SocialDefault = ({ text, icon}) =>{
+    return(
+        <>
+            <div className={`${styles["footer-link"]}`}><img src={icon} alt={text}/>{text}</div>
+        </>
+    );
+}

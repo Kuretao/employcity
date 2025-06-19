@@ -1,6 +1,6 @@
 import styles from "./dropdown.module.scss";
 import arrow from './../../../assets/icons/arrow.svg'
-import {DropdownAtoms} from "../../../store/dropdownAtoms.js";
+import {DropdownAtoms} from "../../../store/storeAtoms.js";
 import {useAtom} from "jotai";
 
 

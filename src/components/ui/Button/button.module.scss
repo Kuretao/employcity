@@ -1,22 +1,39 @@
 @import "./../../../styles/variables";
 
 .btn{
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: 2px;
-  padding: 12px 32px;
+  padding: 15px 32px;
   border-radius: 4px;
-  font-weight: 800;
   text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #6F6D7B;
+  background: #FFFFFF;
+  color: #2A2B30;
 }
 
-//.button--transparent{
-//  border: 2px solid $neutral-06;
-//  color: $neutral-07;
-//}
-//
-//.button--dark{
-//  color: $neutral-01;
-//  background-color: $neutral-07;
-//  border: 2px solid $neutral-07;
-//}
+.btn:hover{
+  color: #fff;
+  background-color: $accent-1;
+  border: 1px solid #FFFFFF;
+}
+
+.button--accent-small{
+  color: #fff;
+  background-color: $accent-1;
+  border: 1px solid #FFFFFF;
+}
+
+.button--accent{
+  padding: 17px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: $accent-1;
+  border: 1px solid #FFFFFF;
+  width: 100%;
+  max-width: 370px;
+}

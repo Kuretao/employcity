@@ -1,0 +1,41 @@
+@import "./../../styles/variables";
+
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  gap: clamp(20px, 19vw, 40px);
+  align-items: center;
+  padding-left: clamp(20px, 19vw, 375px);
+  padding-right: clamp(20px, 19vw, 375px);
+  background-color: $neutral-02;
+  height: 80px;
+
+  *{
+    text-wrap: nowrap;
+  }
+
+  &__copyright{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #fff;
+  }
+
+  &__divider{
+    display: block;
+    height: 18px;
+    width: 1px;
+    border: none;
+    background: #C3C3C3;
+    min-width: 1px;
+  }
+
+  &__nav{
+    display: flex;
+    flex-direction: row;
+    gap: clamp(20px, 19vw, 40px);
+  }
+}
