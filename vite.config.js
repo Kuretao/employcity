@@ -6,5 +6,6 @@ export default defineConfig({
   plugins: [react()],
   build: {
     assetsInlineLimit: 0,
-  }
+  },
+  base: '/employcity/'
 })
