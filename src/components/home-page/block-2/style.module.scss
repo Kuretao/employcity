@@ -7,17 +7,27 @@
   justify-content: center;
   height: 90vh;
   gap: 80px;
-  padding-left: clamp(20px, 19vw, 375px);
-  padding-right: clamp(20px, 19vw, 375px);
+  padding-left: clamp(24px, 19vw, 375px);
+  padding-right: clamp(24px, 19vw, 375px);
   background-color: $neutral-05;
   background-image: url("./../../../assets/images/bg-form.png");
   background-repeat: no-repeat;
   background-position: center center;
 
   @media screen and (max-width: 1200px) {
-    padding-left: clamp(20px, 19vw, 96px);
-    padding-right: clamp(20px, 19vw, 96px);
+    padding-left: clamp(24px, 19vw, 96px);
+    padding-right: clamp(24px, 19vw, 96px);
+  }
 
+  @media screen and (max-width: 500px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media screen and (max-width: 700px) {
+    gap: 32px;
+    height: 100%;
+    min-height: 90vh;
   }
 
   &-header{
@@ -36,6 +46,11 @@
 
       color: #fff;
 
+
+      @media screen and (max-width: 700px) {
+        text-align: center;
+      }
+
       &-accent{
         color: $text;
       }
@@ -48,6 +63,11 @@
       letter-spacing: 0;
       vertical-align: middle;
       color: #bbb;
+
+
+      @media screen and (max-width: 700px) {
+        text-align: center;
+      }
     }
   }
 }

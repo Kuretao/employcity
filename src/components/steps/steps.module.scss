@@ -58,4 +58,31 @@
       background: #C4C4C4;
     }
   }
+
+  @media screen and (max-width: 700px) {
+    .steps-item{
+      gap: 10px;
+    }
+
+    p{
+      font-size: 12px;
+    }
+
+    &-dots{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      top: 30px;
+    }
+
+    img{
+      width: 60px;
+      height: 60px;
+      object-fit: scale-down;
+
+      border: 3px solid $neutral-01;
+    }
+  }
 }

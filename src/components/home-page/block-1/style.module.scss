@@ -7,13 +7,22 @@
   justify-content: center;
   gap: clamp(40px, 8vh, 80px);
   height: 83vh;
-  padding-left: clamp(20px, 19vw, 375px);
-  padding-right: clamp(20px, 19vw, 375px);
+  padding-left: clamp(24px, 19vw, 375px);
+  padding-right: clamp(24px, 19vw, 375px);
 
   @media screen and (max-width: 1200px) {
-    padding-left: clamp(20px, 19vw, 96px);
-    padding-right: clamp(20px, 19vw, 96px);
+    padding-left: clamp(24px, 19vw, 96px);
+    padding-right: clamp(24px, 19vw, 96px);
 
+  }
+
+  @media screen and (max-width: 700px) {
+    gap: 40px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   &__title {
