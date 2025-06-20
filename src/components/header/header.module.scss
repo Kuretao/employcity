@@ -13,4 +13,12 @@
   padding-bottom: 31px;
   background-color: $neutral-04;
   z-index: 1;
+  
+  @media screen and (max-width: 1200px) {
+    padding-left: clamp(20px, 19vw, 96px);
+    padding-right: clamp(20px, 19vw, 96px);
+    nav{
+      gap: 16px;
+    }
+  }
 }

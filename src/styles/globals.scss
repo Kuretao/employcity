@@ -55,14 +55,14 @@ table {
 
 h1{
   font-weight: 700;
-  font-size: 48px;
+  font-size: clamp(32px, 19vw, 48px);
   line-height: 100%;
   letter-spacing: 0;
   text-transform: uppercase;
 }
 
 h2{
-  font-size: 36px;
+  font-size: clamp(28px, 19vw, 36px);
   font-weight: 800;
   line-height: 100%;
   letter-spacing: 0;
@@ -70,7 +70,7 @@ h2{
 }
 
 h3{
-  font-size: 28px;
+  font-size: clamp(24px, 19vw, 28px);
   line-height: 100%;
   font-weight: 800;
   letter-spacing: 0;
@@ -78,16 +78,16 @@ h3{
 }
 
 h4{
-  font-size: 48px;
-  line-height: 48px;
+  font-size: clamp(32px, 19vw, 48px);
+  line-height: clamp(32px, 19vw, 48px);
   letter-spacing: -1px;
   font-weight: 900;
 }
 
 h5{
   font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: clamp(24px, 19vw, 32px);
+  line-height: clamp(32px, 19vw, 40px);
   letter-spacing: -0.5px;
 }
 

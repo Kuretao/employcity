@@ -11,6 +11,11 @@
   background-color: $neutral-02;
   height: 80px;
 
+  @media screen and (max-width: 1200px) {
+    padding-left: clamp(20px, 19vw, 96px);
+    padding-right: clamp(20px, 19vw, 96px);
+  }
+
   *{
     text-wrap: nowrap;
   }
@@ -37,5 +42,14 @@
     display: flex;
     flex-direction: row;
     gap: clamp(20px, 19vw, 40px);
+  }
+
+  @media screen and (max-width: 860px){
+    justify-content: center;
+    align-items: center;
+
+    nav,hr{
+      display: none!important;
+    }
   }
 }

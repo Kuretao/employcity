@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   height: 90vh;
-  gap: 40px;
+  gap: 80px;
   padding-left: clamp(20px, 19vw, 375px);
   padding-right: clamp(20px, 19vw, 375px);
   background-color: $neutral-05;
@@ -14,13 +14,17 @@
   background-repeat: no-repeat;
   background-position: center center;
 
+  @media screen and (max-width: 1200px) {
+    padding-left: clamp(20px, 19vw, 96px);
+    padding-right: clamp(20px, 19vw, 96px);
+
+  }
 
   &-header{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    margin-bottom: 40px;
 
     &__title{
       font-weight: 800;

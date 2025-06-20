@@ -18,7 +18,6 @@ export const OrderBlock = () =>{
 
             <Steps/>
             <Form/>
-            <Button text={'Отправить'} additionalClass={'accent'}/>
         </section>
 
     )

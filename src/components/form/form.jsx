@@ -1,10 +1,10 @@
 import styles from './form.module.scss'
-import {useState} from "react";
 import {Input} from "../ui/Input/Input.jsx";
 import {Dropdown} from "../ui/dropdown/dropdown.jsx";
 import file from "./../../assets/icons/file.svg";
 import {useAtom} from "jotai";
 import {fileNameAtom, progressAtom} from "../../store/storeAtoms.js";
+import {Button} from "../ui/Button/Button.jsx";
 
 const OrderFormFirstStep = ({children}) => {
     return (
@@ -62,12 +62,13 @@ const OrderFormSecondStep = () => {
 export const Form = () => {
     return (
         <form className={styles["form"]}>
-        <OrderFormFirstStep>
+            <OrderFormFirstStep>
                 <Dropdown list={[{id: 1, title: "lorem"}, {id: 2, title: "lorem"}]} text="lorem"/>
                 <Input type={'email'} white required={true} placeholder={"Введите Email"}/>
                 <Input type={'text'} white required={true} placeholder={"Введи имя"}/>
             </OrderFormFirstStep>
             <OrderFormSecondStep/>
+            <Button text={'Отправить'} additionalClass={'accent'}/>
         </form>
     )
 }

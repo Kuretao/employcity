@@ -6,9 +6,9 @@ export const HomeWelcomeBlock = () =>{
     return (
         <section className={styles["home-welcome"]}>
             <h1 className={styles["home-welcome__title"]}>
-                Lorem ipsum
-                <span className={styles["home-welcome__title-accent"]}>dolor sit amet consectetur</span>
-                adipiscing
+                <span className={styles["home-welcome__title-accent"]}>Lorem ipsum </span>
+                dolor sit <br/> amet consectetur
+                <span className={styles["home-welcome__title-accent"]}> adipiscing</span>
             </h1>
 
             <div className={styles["home-welcome__features"]}>
