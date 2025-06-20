@@ -1,12 +1,12 @@
 import styles from './steps.module.scss';
-import firstStep from './../../assets/icons/steps/.svg'
-import secondStep from './../../assets/icons/steps/.svg'
-import thridStep from './../../assets/icons/steps/Subtract.svg'
-import fourStep from './../../assets/icons/steps/.svg'
-import fiveStep from './../../assets/icons/steps/.svg'
+import firstStep from './../../assets/icons/steps/vect.svg'
+import secondStep from './../../assets/icons/steps/vecto.svg'
+import thridStep from '../../assets/icons/steps/ve.svg'
+import fourStep from './../../assets/icons/steps/vector.svg'
+import fiveStep from './../../assets/icons/steps/vec.svg'
 import React, {useRef, useEffect, useState} from 'react';
 
-const Dots = ({count}) => {
+const Dots = () => {
     return (
         <div className={styles["steps-dots"]}>
             <i></i>

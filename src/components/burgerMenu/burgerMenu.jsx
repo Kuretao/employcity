@@ -6,7 +6,7 @@ import {SocialDefault, SocialLink} from "../ui/SocialLink/SocialLink.jsx";
 import qiwi from "../../assets/icons/footer/Frame 19.svg";
 import ym from "../../assets/icons/footer/Vector.svg";
 import wm from "../../assets/icons/footer/Combined Shape.svg";
-import email from "../../assets/icons/footer/.svg";
+import email from "../../assets/icons/footer/v.svg";
 import vk from "../../assets/icons/footer/В.svg";
 
 export const BurgerMenu = ({ children }) => {
