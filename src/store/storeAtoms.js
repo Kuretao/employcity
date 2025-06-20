@@ -11,3 +11,5 @@ export const fileNameAtom = atom('');
 export const NarrowAtom = atom(window.innerWidth < 1600);
 
 export const TabletAtom = atom(window.innerWidth < 860);
+
+export const burgerAtom = atom(false);

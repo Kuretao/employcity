@@ -1,0 +1,101 @@
+@import "./../../styles/variables";
+
+.burgerButton {
+  position: relative;
+  z-index: 1100;
+  width: 30px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+
+  span {
+    width: 30px;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: 1px;
+  }
+
+  &.open span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  &.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  &.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    margin-top: 30%;
+  }
+
+
+}
+
+.fullScreenNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #00000080;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1050;
+  flex-direction: column;
+  text-align: center;
+}
+
+.fullScreenNav.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+    a{
+      font-size: 24px;
+      line-height: 100%;
+      color: #fff;
+      letter-spacing: 0;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    a:hover{
+      color: $text;
+    }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 1040;
+}
+
+.menu-footer{
+  position: absolute;
+  bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
